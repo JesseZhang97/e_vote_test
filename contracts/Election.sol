@@ -5,8 +5,8 @@ contract Election {
       string name;
       uint voteCount;
   }
-  mapping(address => bool) public voters;
-  mapping(uint => Candidate) public candidates;
+  mapping(address => bool) public voters;//TODO
+  mapping(uint => Candidate) public candidates;//TODO
   uint public candidatesCount;
     event votedEvent (
         uint indexed _candidateId
